@@ -46,14 +46,19 @@ function Counter() {
         <span>{ date.toDateString() }</span>
 
       </h3>
-      <div>
-        <button
-        onClick={() => {
-          setCount(0);
-          setStep(1);
-        }}
-        >Reset</button>
-      </div>
+      
+        {count !== 0 || step !== 1 ? (
+          <div>
+            <button
+              onClick={() => {
+              setCount(0);
+              setStep(1);
+              }}
+            >Reset</button>
+          </div>
+        ) : null}
+        
+      
     </div>
   );
 }
