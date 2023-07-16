@@ -23,7 +23,7 @@ function Counter() {
         <input id="point" type="range" min="1" max="10" value={step}
           onChange={e => setStep(Number(e.target.value))}
         ></input>
-        <span>{ step }</span>
+        <span>Step: { step }</span>
       
       </div>
       <br />
